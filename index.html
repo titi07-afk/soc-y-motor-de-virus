@@ -1,11 +1,34 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Antivirus</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Antivirus Web</title>
+<link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    
+
+  <div class="contenedor">
+
+    <h1>ANTIVIRUS WEB</h1>
+    <p class="subtitulo">Panel de seguridad · escaner de firmas maliciosas</p>
+
+    <textarea id="codigo" placeholder="Escribí o pegá el código acá..."></textarea>
+
+    <div class="botones">
+      <button id="btnEscanear" onclick="escanear()">iniciar escaneo</button>
+      <button id="btnCuarentena" onclick="enviarCuarentena()" disabled>Enviar a cuarentena</button>
+    </div>
+
+    <div id="estado">Esperando codigo...</div>
+
+    <div id="cuarentena">
+      <h2>zona de cuarentena (registro)</h2>
+      <ul id="lista"></ul>
+    </div>
+
+  </div>
+
+<script src="script.js"></script>
 </body>
 </html>

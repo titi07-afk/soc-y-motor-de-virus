@@ -1,0 +1,145 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #000000;
+  color: #d5f5e3;
+  font-family: monospace;
+  text-align: center;
+  padding: 30px 15px 50px;
+}
+
+.contenedor {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #39ff88;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+
+.subtitulo {
+  color: #6fa5b8;
+  font-size: 0.85rem;
+  margin-bottom: 25px;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  background-color: #0a0f0a;
+  color: #39ff88;
+  border: 1px solid #39ff88;
+  border-radius: 8px;
+  padding: 14px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  resize: vertical;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #39ff88;
+}
+
+.botones {
+  margin: 18px 0;
+}
+
+button {
+  background: #000000;
+  color: #39ff88;
+  border: 1px solid #39ff88;
+  border-radius: 6px;
+  padding: 12px 22px;
+  margin: 6px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+}
+
+button:hover:not(:disabled) {
+  background: #39ff88;
+  color: #000000;
+}
+
+#btnCuarentena {
+  border-color: #ffb300;
+  color: #ffb300;
+}
+
+#btnCuarentena:hover:not(:disabled) {
+  background: #ffb300;
+  color: #000000;
+}
+
+button:disabled {
+  color: #4a5a63;
+  border-color: #2a3942;
+  cursor: not-allowed;
+}
+
+#estado {
+  margin: 18px 0;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #39ff88;
+  background: #000000;
+  color: #8aa3ad;
+  transition: all 0.3s ease;
+}
+
+.rojo {
+  background: #000000 !important;
+  color: #ff5c6c !important;
+  border: 1px solid #ff2d46 !important;
+}
+
+.verde {
+  background: #000000 !important;
+  color: #39ff88 !important;
+  border: 1px solid #39ff88 !important;
+}
+
+#cuarentena {
+  margin-top: 25px;
+  text-align: left;
+  background: #000000;
+  border: 1px solid #39ff88;
+  border-radius: 8px;
+  padding: 16px 18px;
+}
+
+#cuarentena h2 {
+  color: #39ff88;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-top: 0;
+  border-bottom: 1px solid #39ff88;
+  padding-bottom: 8px;
+}
+
+#lista {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  font-size: 0.85rem;
+}
+
+#lista li {
+  border-bottom: 1px dashed #1f3b4d;
+  padding: 8px 2px;
+  color: #ffb300;
+}
+
+#lista li:last-child {
+  border-bottom: none;
+}
